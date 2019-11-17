@@ -70,7 +70,7 @@ class PinStickiedDiscussionsToTop
             $sticky->where('is_sticky', true);
             $sticky->orders = null;
 
-            $query->union($sticky);
+            array_unshift($query->orders, ['column' => 'is_sticky', 'direction' => 'desc']);
 
             $read = $query->newQuery()
                 ->selectRaw(1)
