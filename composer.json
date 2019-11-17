@@ -1,5 +1,5 @@
 {
-    "name": "flarum/sticky",
+    "name": "velcis/super-sticky",
     "description": "Pin discussions to the top of the list.",
     "type": "flarum-extension",
     "keywords": ["discussion"],
@@ -15,7 +15,7 @@
         "source": "https://github.com/flarum/sticky"
     },
     "require": {
-        "flarum/core": "^0.1.0-beta.9"
+        "flarum/core": "^0.1.0-beta.10"
     },
     "autoload": {
         "psr-4": {
